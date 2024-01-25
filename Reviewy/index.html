@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <title>Reviewy</title>
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="map.css">
+    <script src="scripts.js"></script>
+</head>
+<body>
+    <header> 
+        <nav class="navbar">
+            <a class = Logo href = "index.html"><h1 class = Logo_text>Reviewy </h1><img class = logo_image src="img/Logo.png" alt="Logo"></a>
+            
+
+    
+            <ul class="navbar-links">
+                <li class="navbar-dropdown">
+                    <a href="write_Review_b.html">Write A Review</a>
+                </li>
+                <li class="navbar-dropdown">
+                    <a href="About.html">About and Support</a>
+                    
+                <li id="account" class="navbar-dropdown">
+                    <a href="#">
+                        <div id="account_name">Guest</div><img onload="get_user()" id="account_image" src="img/Account.png", alt="Account image">
+                    </a>
+                    <div class="dropdown">
+                        <a href="Login.html">Log in</a>
+                        <a href="Register.html">Register</a>
+                        <a onclick = "logout()" >Logout</a>
+                    </div>
+
+                </li> 
+            </ul>
+        </nav>
+    </header>
+
+
+    
+   <div class = "container">
+    
+    <div id="map"></div>
+
+    <!-- Search input -->
+    <input id="searchInput" class="controls" type="text" placeholder="Search Restaurants near you">
+
+     
+    <div id = "restaurant-list-container">
+    <!-- Restaurant list -->
+    <h1 class = list-title> Restaurants </h1>
+    <ul id = "restaurant-list"></ul>
+    <h2>there doesn't seem to be any resturants near that location </h2>
+
+
+
+
+       
+
+    
+    
+        
+    </div>
+
+
+
+        
+   
+    <!-- Google map -->
+    
+    
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZRdal1-Qowt_Q-YX7Zkv8qnxFUuRdd8w&map_id=7e2a5233dbf3b5cc&callback=initMap&libraries=places"></script>
+</body>
+</html>

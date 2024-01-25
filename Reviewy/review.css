@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Didot, serif;
+}
+
+
+/* Styles for the reviews section */
+.Reviews_elements {
+  width: 75%;
+  margin: 0 auto; /* Center the box horizontally */
+  padding: 20px;
+  background-color: #6c6257;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a box shadow for depth */
+}
+
+.Reviews_elements h1{
+  font-size: 3rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: white;
+}
+
+/* Styles for the review container */
+#reviewsContainer {
+  list-style-type: none;
+  padding: 0;
+  
+}
+
+/* Style for each review */
+.review {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+/* Style for the user */
+.user {
+  font-weight: bold;
+  margin-right: 10px;
+  width: 10%;
+  color: white;
+}
+
+.information-container {
+  display: block;
+  overflow-wrap: break-word;
+  width: 80%;
+  outline: #6c6257;
+  margin-bottom: 10px;
+}
+
+/* Style for the information */
+.information {
+  flex-grow: 1;
+  margin-bottom: 5px;
+  padding: 3%;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: transform 0.3s ease;
+  color: black;
+  overflow-wrap: break-word;
+}
+
+/* Hover animation for the information */
+.information:hover {
+  transform: scale(1.05);
+  left: 100px;
+}
+/* Style for the stars */
+.stars {
+  margin-top: 0;
+  margin: 10px;
+  color: white
+  ;
+}
+
+/* Style for the stars icon */
+.stars::before {
+  content: "★";
+  color: #ffc107;
+}
+
+.review-heading {
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.review-text {
+  font-size: 1rem;
+  color: white;
+  position: fixed;
+  bottom: 0px;
+}
+
+.no_reviews{
+  font-size: 1rem;
+  color: white;
+}

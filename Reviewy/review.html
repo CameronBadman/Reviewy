@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviewy</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="review.css">
+    <script src="scripts.js"></script>
+</head>
+<body onload="display_reviews()">
+    <header> 
+        <nav class="navbar">
+            <a class = Logo href = "index.html"><h1 class = Logo_text>Reviewy </h1><img class = logo_image src="img/Logo.png" alt="Logo"></a>
+            
+
+    
+            <ul class="navbar-links">
+                <li class="navbar-dropdown">
+                    <a href="write_Review_b.html">Write A Review</a>
+                </li>
+                <li class="navbar-dropdown">
+                    <a href="About.html">About and Support</a>
+                    
+                <li id="account" class="navbar-dropdown">
+                    <a href="#">
+                        <div id="account_name">Guest</div><img onload="get_user()" id="account_image" src="img/Account.png", alt="Account image">
+                    </a>
+                    <div class="dropdown">
+                        <a href="Login.html">Log in</a>
+                        <a href="Register.html">Register</a>
+                        <a onclick = "logout()" >Logout</a>
+                    </div>
+
+                </li> 
+            </ul>
+        </nav>
+    </header>
+        </header>
+        <div class = Reviews_elements>
+            <h1>Reviews</h1>
+            <ul id="reviewsContainer"></ul>
+            <a class = "no_reviews" href="write_Review_b.html"> There Doesn't seem to be any Reviews here, Write A Review?</a>
+        </div>
+        
+        
+    
+        
+</body>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <title>Reviewy</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="account.css">
+    <script src="scripts.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+<body onload="register_init()">
+    <header> 
+        <nav class="navbar">
+            <a class = Logo href = "index.html"><h1 class = Logo_text>Reviewy </h1><img class = logo_image src="img/Logo.png" alt="Logo"></a>
+            
+
+    
+            <ul class="navbar-links">
+                <li class="navbar-dropdown">
+                    <a href="write_Review_b.html">Write A Review</a>
+                </li>
+                <li class="navbar-dropdown">
+                    <a href="About.html">About and Support</a>
+                    
+                <li id="account" class="navbar-dropdown">
+                    <a href="#">
+                        <div id="account_name">Guest</div><img onload="get_user()" id="account_image" src="img/Account.png", alt="Account image">
+                    </a>
+                    <div class="dropdown">
+                        <a href="Login.html">Log in</a>
+                        <a href="Register.html">Register</a>
+                        <a onclick = "logout()" >Logout</a>
+                    </div>
+
+                </li> 
+            </ul>
+        </nav>
+    </header>
+    
+    <section >
+        <div class = "Login" >
+            <p class = "title">Register</p>
+            <form>
+                <label class = "account_title" for = "username">Username</label>
+                <input class = "account_entry" type="text" id="username_entry" name="username" value=""><br>
+                <ul class = "errors_username"></ul>
+                <label class = "account_title" for = "password">Password</label>
+                <input class = "account_entry" type="password" id="password_entry" name="password" value=""><br>
+                <ul class = "errors_password"></ul>
+            </form>
+            <button class = "account_button" type="button" onclick="register_account()">Register</button>
+
+        </div>
+    </section>
+
+</body>

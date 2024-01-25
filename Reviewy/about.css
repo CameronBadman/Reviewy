@@ -1,0 +1,44 @@
+
+* {
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-family: Didot, serif;
+  }
+
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+}
+
+.about-me {
+    margin: 50px;
+    padding: 20px;
+    border-radius: 10px;
+    animation: grow 1s ease-in-out infinite alternate;
+    background-color: #6c6257;
+}
+
+.about-me h1, .about-me p {
+    transition: 0.3s;
+}
+
+
+.customer-support {
+    margin: 50px;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    background-color: #6c6257;
+}
+
+.customer-support h1, .customer-support h2 {
+    transition: 0.3s;
+}
+
+
+

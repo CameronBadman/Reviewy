@@ -1,0 +1,167 @@
+/* Default styles */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Didot, serif;
+}
+
+body {
+  background-color: #f2f2f2; /* Set the background color to grey */
+}
+
+.container {
+  display: flex; /* Use flexbox for container */
+  height: 100vh; /* Set container height to full viewport height */
+  overflow: hidden; /* Prevent container's content from overflowing */
+}
+
+
+#map {
+  flex: 1; /* Grow to take remaining space */
+  height: 100%;
+  width: 70%;
+}
+
+#list-container {
+  max-width: 300px;
+  background-color: #fff;
+  padding: 1em;
+  box-shadow: 0 1px 4px -1px rgba(0, 0, 0, 0.3);
+  font-family: Didot, serif;
+  font-size: 15px;
+}
+
+
+/* map styles */
+#description {
+  font-family: Didot, serif;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+#infowindow-content .title {
+  font-weight: bold;
+}
+
+#infowindow-content {
+  display: none;
+}
+
+#map #infowindow-content {
+  display: inline;
+  height: 30px;
+}
+
+.pac-card {
+  background-color: #fff;
+  border: 0;
+  border-radius: 2px;
+  box-shadow: 0 1px 4px -1px rgba(0, 0, 0, 0.3);
+  padding: 1em;
+  font: 400 18px;
+  overflow: hidden;
+  font-family: Didot, serif;
+}
+
+#pac-container {
+  padding-bottom: 12px;
+}
+
+.pac-controls {
+  display: inline-block;
+  padding: 5px 11px;
+}
+
+.pac-controls label {
+  font-size: 13px;
+  font-weight: 300;
+}
+
+#pac-input {
+  background-color: #fff;
+  font-family: Didot, serif;
+  font-size: 15px;
+  font-weight: 300;
+  
+}
+
+#pac-input:focus {
+  width: 300px;
+}
+
+#searchInput {
+  width: 50%;
+  height: 40px;
+  margin-top: 11px;
+}
+
+/* list styles */
+
+
+#restaurant-list-container
+ {
+  width: 325px;
+  right: 0;
+  height: 100%;
+  overflow:scroll
+}
+
+#restaurant-list-container::-webkit-scrollbar {
+  width: 0px;  /* Remove scrollbar space */
+  background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+
+#restaurant-list-container h2 {
+  font-size: 1rem;
+  font-weight: 800;
+  margin: 20px 0;
+  text-align: center;
+}
+
+
+.list-title{
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.restaurant {
+  position: relative;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 10px;
+  transition: all 0.3s ease;
+  background-color: #f9f9f9; /* Add a background color */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+}
+
+.restaurant:hover {
+  cursor: pointer;
+  transform: translateY(-2px); /* Slightly lift the element on hover */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a stronger box shadow on hover */
+}
+
+.list-name {
+  font-size: 1.2rem;
+  text-decoration: none;
+  font-weight: 800;
+  margin: 0;
+  margin-bottom: 10px;
+  white-space: normal;
+  word-wrap: break-word;
+  color: #333; /* Set the text color */
+}
+
+.list-lat,
+.list-lon {
+  text-decoration: none;
+  font-size: 0.75rem;
+  font-weight: 800;
+  margin: 0;
+  transition: 0.4s all;
+  color: #777; /* Set a lighter color for the latitude and longitude */
+}
+

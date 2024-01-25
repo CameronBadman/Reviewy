@@ -1,0 +1,147 @@
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Default styles */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Didot, serif;
+  }
+  
+
+.review-form {
+    animation: fadeIn 2s ease-in-out;
+    background-color: #6c6257;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 30px;
+    font-family: Arial, sans-serif;
+    transition: all 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.review-form input[type="text"],
+.review-form select,
+.review-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    border-radius: 30px;
+    background-color: #f2f2f2;
+    transition: all 0.5s ease;
+    color: #555;
+    font-size: 16px; /* Increased font size */
+}
+
+.review-form input[type="text"]:focus,
+.review-form select:focus,
+.review-form textarea:focus {
+    outline: none;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    background-color: #e0e0e0;
+    
+}
+
+.review-form textarea {
+    height: 120px; /* Increased height */
+    
+}
+
+.star-rating {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 15px; /* Increased margin */
+    color: white;
+}
+
+.stars label {
+    position: relative;
+    display: inline-block;
+    width: 35px; /* Increased width */
+    height: 35px; /* Increased height */
+    margin: 0 2px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    color: white;
+}
+
+.stars label:before {
+    content: "\2605";
+    font-size: 28px; /* Increased font size */
+    color: #ddd;
+    transition: color 0.3s;
+}
+
+.stars input[type="radio"]:checked ~ label:before {
+    color: #ffbf00;
+}
+
+button {
+    padding: 15px 25px; /* Increased padding */
+    background-color: #007bff;
+    color: #fff;
+    
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:active {
+    background-color: #003580;
+}
+
+@media (max-width: 768px) {
+    .review-form {
+        width: 90%;
+        padding: 20px;
+        margin-top: 10vh;
+    }
+
+    .stars {
+        justify-content: flex-start;
+    }
+
+    .stars label {
+        margin-right: 8px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    body {
+        padding: 20px;
+    }
+    
+    .coordinates {
+        position: absolute;
+        margin-top: 10px;
+        top: 0;
+        right: 0;
+        font-size: 12px;
+        color: #999;
+        
+        
+    }
+}
+
+
+

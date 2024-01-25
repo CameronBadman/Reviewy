@@ -1,0 +1,107 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Didot, serif;
+    color:white
+    }
+
+
+.Login {
+    text-align: center;
+    background-color: #6c6257;
+    border-radius: 60px;
+    box-shadow: 0px 10px 10px 10px rgba(0, 0, 0, 0.3);
+    width: 40%;
+    max-width: 90%;
+    margin: 100px auto;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content horizontally */
+}
+
+.title {
+    font-size: 3.5rem;
+    text-align: center;
+    margin: 20px auto;
+    transition: all 0.5s ease;
+}
+
+.account_entry {
+    width: 100%;
+    max-width: 350px;
+    height: 40px;
+    margin: 10px auto;
+    margin-bottom: 40px;
+    text-align: left;
+    transition: all 0.5s ease;
+    border: none;
+    border-radius: 30px;
+    background-color: #f2f2f2;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    color: #555;
+    font-size: 1rem;
+    margin-left: 0; /* Set the left margin to 0 */
+}
+
+.account_entry:focus {
+    outline: none;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    background-color: #e0e0e0;
+}
+
+.account_title {
+    float: none; /* Remove the float */
+    margin: 0px 10px;
+    font-size: 2rem;
+    transition: all 0.5s ease;
+    text-align: center; /* Center the text */
+}
+
+.account_button {
+    width: 150px;
+    height: 55px;
+    border-radius: 20px;
+    color: whi;
+    background: black;
+    transition: all 0.5s ease;
+    font-size: 1.5rem;
+    margin: 5px 15%;
+    align-self: flex-start; /* Align the button to the left */
+}
+
+.account_button:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.05);
+}
+
+@media (max-width: 800px) {
+    .Login {
+        width: 60%;
+        padding: 10%;
+        margin-top: 10vh;
+    }
+    
+    .title {
+        font-size: 2rem;
+    }
+    
+    .account_entry {
+        max-width: 100%;
+    }
+    
+    .account_title {
+        margin: 0px 5px;
+        font-size: 1.5rem;
+    }
+    
+    .account_button {
+        margin: 0px 5px;
+        width: 100%;
+        align-self: flex-start; /* Align the button to the left */
+    }
+}
